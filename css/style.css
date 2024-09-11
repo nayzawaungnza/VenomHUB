@@ -197,36 +197,92 @@ a:focus {
 
 
 /* Titles */
-
 .title-section {
-    font-size: 42px;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .title-regular {
-    font-weight: 500;
+    font-weight: 300;
     color: #254354;
 }
 
-.title-underline {
-    height: 3px;
-    width: 70px;
-    background-color: #50b8e6;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+.title-section strong {
+    color: #f89433;
+    font-weight: 700;
 }
 
 .title-underline-center {
-    height: 3px;
-    width: 70px;
+    height: 1px;
+    width: 100px;
     background-color: #50b8e6;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin: 20px auto;
 }
 
-.title-light {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
+/* Paragraph */
+p.lead {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/* Stats Section */
+.stats-row {
+    margin-top: 50px;
+}
+
+.stat-box {
+    background-color: #f7f7f7;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #50b8e6;
+    color: #fff;
+}
+
+.stat-icon {
+    font-size: 48px;
+    color: #50b8e6;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.stat-box:hover .stat-icon {
+    color: #fff;
+}
+
+label {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stat-box {
+        margin: 20px 0;
+    }
 }
 
 
@@ -777,7 +833,171 @@ a:focus {
 
 
 /* Hero Header */
+.hero-header {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    transition: background-image 1s ease-in-out;
+}
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darken the background for better text contrast */
+}
+
+.hero-header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.hero-header .intro-text .intro-lead-in {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+    color: #f89433; /* Change lead-in text color to gold */
+}
+
+.hero-header .intro-text .intro-heading {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 50px;
+    color: #50b8e6; /* Change heading text color */
+}
+
+.btn {
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.dots-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between buttons and dots */
+    z-index: 3;
+    justify-content: space-between; /* Add space between prev and next */
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+    margin: 0 20px; /* Space the dots away from the buttons */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #f89433;
+}
+  
+
+.hero-header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.hero-header .intro-text .intro-lead-in {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3; /* Ensure the buttons are above other elements */
+    transform: translateY(-50%);
+    padding: 0 15px; /* Add some padding to keep buttons away from edges */
+}
+
+.control-btn {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.control-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#prev {
+    margin-right: 10px;
+}
+
+#next {
+    margin-left: 10px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    .hero-header .intro-text .intro-lead-in {
+        font-size: 40px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    .hero-header .intro-text .intro-heading {
+        font-size: 75px;
+        line-height: 75px;
+    }
+}
+
+
+/*
 .hero-header {
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -836,7 +1056,42 @@ a:focus {
         margin-bottom: 50px;
     }
 }
+*/
+/* Title Section */
+.title-section {
+    font-size: 42px;
+    font-weight: 700;
+    color: #333; /* Darker color for the title */
+    text-transform: uppercase; /* Uppercase for a bold, clear appearance */
+    margin-bottom: 20px;
+}
 
+.title-regular {
+    font-weight: 300; /* Make the 'Venom HUB' part lighter to contrast */
+}
+
+.title-section strong {
+    color: #f89433; /* Highlight 'Your Trusted Partner' with a standout color */
+    font-weight: 700;
+}
+
+.title-underline-center {
+    width: 100px;
+    height: 4px;
+    background-color: #50b8e6; /* Use the same highlight color as for your header */
+    margin: 20px auto; /* Center the underline */
+}
+
+/* Paragraph */
+p.lead {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555; /* Subtle color for the paragraph */
+    line-height: 1.8; /* More space between lines for readability */
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the text block */
+    text-align: justify; /* Make the paragraph text justified */
+}
 
 /* Product Header */
 
@@ -1223,28 +1478,33 @@ a:focus {
 
 /* Normal Team Listing */
 
-.team-member h2 {
-    margin: 0;
+.title-section {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
-
-.team-member h3 {
+.title-regular {
     font-weight: 400;
 }
 
-.team-member .col-md-4 {
-    margin: 50px 0;
+.team-member {
+    position: relative;
+    margin-bottom: 1.5rem;
 }
-
-
-/* Team Creative */
-
-.team-content {
-    padding: 50px 10px;
+.team-img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.team-content i {
-    padding: 0 10px;
-    font-size: 30px;
+.team-info {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.team-name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+.team-role {
+    color: #777;
 }
 
 
@@ -1602,19 +1862,38 @@ ul.comments .comment-block .comment-by {
 /* 08_11 - Highlighted Testmonial
 -------------------------------------------------- */
 
-.testmonial-container {
-    background-position: center top;
-    background-size: 100% auto;
-}
-
-.testmonial-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 50px 0;
-}
-
-.testmonial-content p {
-    color: #fff;
-}
+ .page-section-no-padding {
+        padding: 0;
+        margin: 0;
+    }
+    .testmonial-container {
+        position: relative;
+        background-image: url(http://placehold.it/1920x1080);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 4rem 0;
+        text-align: center;
+    }
+    .testmonial-content {
+        position: relative;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    .testimonial-text {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        font-style: italic;
+        margin: 0;
+        color: #fff;
+    }
+    .testimonial-author {
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
 
 
 /* 08_12 - Contact
@@ -1636,78 +1915,125 @@ ul.comments .comment-block .comment-by {
 /* 08_13 - Footer Primary
 -------------------------------------------------- */
 
+/* Footer Styles */
 footer {
-    background-color: #222;
-    padding: 60px 0;
-}
-
-footer p {
+    background-color: #50b8e6; /* Logo color */
     color: #fff;
-}
-
-footer a {
-    color: #fff;
-}
-
-footer ul {
-    padding: 0;
+    padding: 20px 0; /* Reduced padding for a smaller footer */
 }
 
 .footer-logo {
-    width: 70px;
-    margin-bottom: 30px;
+    margin-bottom: 15px; /* Adjusted margin for logo */
 }
 
-.footer-menu h4 {
-    color: #fff;
-    margin-bottom: 30px;
+.footer-logo-img {
+    max-width: 120px; /* Smaller logo size */
+    height: auto;
 }
 
-.footer-menu ul li {
-    list-style: none;
-    padding: 0 0 10px 0;
+.footer-logo-contact, .footer-about-us, .footer-blog, .footer-navigation {
+    padding: 10px; /* Reduced padding for a compact footer */
 }
 
-footer a:visited,
-footer a:link,
-footer a:active,
-footer a:hover {
+.footer-about-us, .footer-blog, .footer-navigation {
+    border-left: 1px solid #fff; /* White border for contrast */
+    padding-left: 15px; /* Adjusted padding */
+}
+
+.footer-about-us h4, .footer-blog h4, .footer-navigation h4 {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 10px;
+    color: #fff; /* White text color */
+}
+
+.footer-blog ul, .footer-navigation ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-blog ul li, .footer-navigation ul li {
+    margin-bottom: 8px; /* Adjusted spacing */
+}
+
+.footer-blog ul li a, .footer-navigation ul li a {
+    color: #d0d0d0; /* Lighter color for links */
     text-decoration: none;
 }
 
-.footer-blog h4 {
-    color: #fff;
-    margin-bottom: 30px;
+.footer-blog ul li a:hover, .footer-navigation ul li a:hover {
+    text-decoration: underline;
 }
 
-.footer-blog ul li {
-    list-style: none;
-    padding: 0 0 10px 0;
+.contact-info p {
+    margin-bottom: 8px; /* Adjusted spacing */
 }
 
-.footer-blog ul li a:visited,
-.footer-blog ul li a:link,
-.footer-blog ul li a:active,
-.footer-blog ul li a:hover {
+.contact-details a {
+    color: #d0d0d0; /* Lighter color for links */
     text-decoration: none;
 }
 
-footer .col-md-3 {
-    margin-bottom: 35px;
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff;
+    color: #fff; /* White text color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
 }
 
 
-/* 08_14 - Footer Secondary 
--------------------------------------------------- */
-
+/* Footer Styles */
 .footer2-container {
-    background-color: #111;
-    width: 100%;
-    background-position: center top;
-    background-size: 100% auto;
-    padding: 20px 0;
-    margin: 0;
+    font-size: 14px; /* Adjusted font size for better readability */
 }
+
+.footer2-copyright {
+    margin-bottom: 15px;
+}
+
+.footer2-copyright p {
+    margin-bottom: 10px;
+}
+
+.footer2-copyright a {
+    color: #1abc9c; /* Accent color for links */
+    text-decoration: none;
+}
+
+.footer2-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer2-social-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px; /* Spacing between social icons */
+}
+
+.footer2-social-icon {
+    color: #ecf0f1; /* Social icons color */
+    font-size: 18px; /* Size of social icons */
+    transition: color 0.3s ease;
+}
+
+.footer2-social-icon:hover {
+    color: #1abc9c; /* Accent color on hover */
+}
+
+/* Ensure proper display on all devices */
+@media (max-width: 767px) {
+    .footer2-social-container {
+        justify-content: center; /* Center social icons on small screens */
+    }
+}
+
 
 
 /* 08_15 - Video

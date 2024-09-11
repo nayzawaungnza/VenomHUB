@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Elsa, a multipurpose Template from Andreas Lautenschlager">
-    <meta name="author" content="Andreas Lautenschlager - www.lautenschlager.de">
+    <meta name="description" content="Venom HUB">
 
-    <title>Elsa Theme - Multipurpose Template from Andreas Lautenschlager</title>
+
+    <title>Venom HUB - Software Development</title>
 
     <!-- normalize core CSS -->
     <link href="css/normalize.css" rel="stylesheet">
@@ -33,7 +33,8 @@
     <![endif]-->
 
     <!-- Google Fonts - Change if needed -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet'
+        type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
@@ -70,14 +71,16 @@
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li class="dropdown-header">Main Page</li>
+                            <li class="dropdown-header">Home Page</li>
                             <li class="active"><a href="index.html">Index</a></li>
+                            <!--
                             <li class="dropdown-header">Alternative Headers</li>
                             <li><a href="index-header-hero.html">Hero Image</a></li>
                             <li><a href="index-header-product.html">Product Feature</a></li>
                             <li><a href="index-header-newsletter.html">Newsletter</a></li>
                             <li><a href="index-header-carousel.html">Classic Carousel</a></li>
                             <li><a href="index-header-video.html">Video</a></li>
+                        -->
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -133,441 +136,407 @@
 
     <!-- Hero Header -->
     <header class="hero-header" id="slider">
+        <div class="overlay"></div>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Elsa!</div>
-                <div class="intro-heading">A beautiful and clean HTML template</div>
+                <h1 class="intro-lead-in">Welcome To Venom HUB!</h1>
+                <h2 class="intro-heading">Your Trusted Software Development Partner</h2>
                 <a href="#intro" class="btn btn-primary btn-lg">See More</a>
+            </div>
+            <!-- Dots with embedded controls -->
+            <div class="dots-controls">
+                <button id="prev" class="control-btn">&#10094;</button>
+                <div class="dots">
+                    <span class="dot" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button id="next" class="control-btn">&#10095;</button>
             </div>
         </div>
     </header>
-    
+
     <!-- Hidden images for the slider -->
     <div id="slider-images" style="display: none;">
         <img src="img/slide1.jpg" alt="Slide 1">
         <img src="img/slide2.jpg" alt="Slide 2">
         <img src="img/slide3.jpg" alt="Slide 3">
     </div>
-    
-
-
-
 
     <!-- Call to Action -->
-    <div class="sec-alternative" style="background-image: url(img/odd_background.png)">
+    <!--<div class="sec-alternative" style="background-image: url(img/odd_background.png)">
         <div class="container cta">
             <div class="row">
                 <div class="col-md-8">
-                    <p>
-                        This could be your <span>Website</span>
-                        <br/>
-                        <span>Check out all layouts and features</span>
-                    </p>
+                    
                 </div>
                 <div class="col-md-4">
-                    <div class="cta-button">
-                        <a href="#demos" class="btn btn-primary">Buy Theme for 10$</a> <span><a href="#">or see more</a></span>
-                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
+    </div> -->
 
     <!-- Intro -->
     <section class="page-section" id="intro">
         <div class="container intro">
+            <!-- Section Title and Description -->
             <div class="row margin-bottom-50">
                 <div class="col-md-12 text-center">
-                    <h1 class="title-section"><span class="title-regular">Elsa is a <strong>multipurpose</strong></span><br/>HTML Template on ThemeForest.</h1>
+                    <h1 class="title-section">
+                        <span class="title-regular">Venom HUB</span>
+                        <br />
+                        <strong>Your Trusted Partner in Software Development</strong>
+                    </h1>
                     <hr class="title-underline-center">
-                    <p class="lead">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        <br/>sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                    <p class="lead">
+                        At VenomHUB, your trusted software development partner, we specialize in delivering custom solutions for Windows, web, and mobile platforms. Whether you need a dynamic website, a portfolio to showcase your work, or tailored software to fit your business needs, we’ve got you covered. Our range of products includes customizable POS systems designed for restaurants, retail stores, beauty lounges, and mobile shops. We also offer ERP solutions with our Odoo partner, and VenomHUB ERP is in development. Additionally, we provide management systems for a variety of industries, including learning, hospital, and library management systems.
+                    </p>
                 </div>
             </div>
-            <div class="row text-center">
-                <div>
-                    <div class="col-md-3 col-sm-6">
-                        <div>
-                            <i class="fa fa-desktop"></i>
-                            <label><strong>14</strong>
-                                <br/>Complete Projects</label>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                        </div>
+    
+            <!-- Stats Section -->
+            <div class="row text-center stats-row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box">
+                        <i class="fa fa-desktop stat-icon"></i>
+                        <label><strong>14</strong><br />Complete Projects</label>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div>
-                            <i class="fa fa-user"></i>
-                            <label><strong>2543</strong>
-                                <br/>Happy Clients</label>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                        </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box">
+                        <i class="fa fa-user stat-icon"></i>
+                        <label><strong>2543</strong><br />Happy Clients</label>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div>
-                            <i class="fa fa-code"></i>
-                            <label><strong>14489</strong>
-                                <br/>Line Of Coding</label>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                        </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box">
+                        <i class="fa fa-code stat-icon"></i>
+                        <label><strong>14489</strong><br />Lines of Code</label>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div>
-                            <i class="fa fa-trophy"></i>
-                            <label><strong>21</strong>
-                                <br/>Awards</label>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</p>
-                        </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-box">
+                        <i class="fa fa-trophy stat-icon"></i>
+                        <label><strong>21</strong><br />Awards</label>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!-- Call to Action Primary -->
     <section class="cta cta-primary">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>Get this Theme <span>now</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing <strong>elitr, sed diam nonumy</strong> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                    <h2>Discover Our <span>Services</span></h2>
+                    <p>Learn more about our wide range of services tailored to meet your <strong>business needs</strong>. We offer custom solutions for software development, ERP systems, and management tools for various industries.</p>
                 </div>
                 <div class="col-md-2 col-md-push-4 cta-button">
-                    <a href="#demos" class="btn btn-primary" style="padding: 35px 15px;">Buy Theme for 10$</a>
+                    <a href="sales-page.html" class="btn btn-primary" style="padding: 20px 15px;">Explore Services</a>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
+    
 
     <!-- About -->
-    <section class="page-section">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-8 col-md-push-4">
-                    <div class="col-md-12">
-                        <h2 class="title-section"><span class="title-regular">WE ARE</span><br/>LAUTENSCHLAGER</h2>
-                        <hr class="title-underline" />
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 ">
-                            <div class="col-xs-2 box-icon">
-                                <div class="fa fa-html5 "></div>
-                            </div>
-                            <div class="col-xs-10">
-                                <h3>HTML5 TEMPLATES</h3>
-                            </div>
-                            <div class="col-md-10 col-xs-offset-2">
-                                <p>
-                                    Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                                </p>
-                            </div>
+<section class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-push-4">
+                <div class="col-md-12">
+                    <h2 class="title-section"><span class="title-regular">OUR</span><br />SERVICES</h2>
+                    <hr class="" />
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="col-xs-2 box-icon">
+                            <div class="fa fa-code"></div>
                         </div>
-                        <div class="col-md-6 ">
-
-                            <div class="col-xs-2 box-icon">
-                                <div class="fa fa-wordpress "></div>
-                            </div>
-                            <div class="col-xs-10">
-                                <h3>WORDPRESS TEMPLATES</h3>
-                            </div>
-                            <div class="col-md-10 col-xs-offset-2">
-                                <p>
-                                    Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                                </p>
-                            </div>
+                        <div class="col-xs-10">
+                            <h3>Custom Software</h3>
+                        </div>
+                        <div class="col-md-10 col-xs-offset-2">
+                            <p>
+                                Tailored software solutions to enhance your business operations across all platforms.
+                            </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 ">
-
-                            <div class="col-xs-2 box-icon">
-                                <div class="fa fa-camera "></div>
-                            </div>
-                            <div class="col-xs-10">
-                                <h3>STOCK PHOTOS</h3>
-                            </div>
-                            <div class="col-md-10 col-xs-offset-2">
-                                <p>
-                                    Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                                </p>
-                            </div>
+                    <div class="col-md-6 ">
+                        <div class="col-xs-2 box-icon">
+                            <div class="fa fa-globe"></div>
                         </div>
-                        <div class="col-md-6 ">
-
-                            <div class="col-xs-2 box-icon">
-                                <div class="fa fa-joomla "></div>
-                            </div>
-                            <div class="col-xs-10">
-                                <h3>JOOMLA TEMPLATES</h3>
-                            </div>
-                            <div class="col-md-10 col-xs-offset-2">
-                                <p>
-                                    Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                                </p>
-                            </div>
+                        <div class="col-xs-10">
+                            <h3>Dynamic Websites</h3>
+                        </div>
+                        <div class="col-md-10 col-xs-offset-2">
+                            <p>
+                                Engaging, responsive websites to elevate your online presence and captivate your audience.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-md-pull-8 ">
-                    <img class="img-responsive" src="http://placehold.it/365x376" alt="" />
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="col-xs-2 box-icon">
+                            <div class="fa fa-credit-card"></div>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>POS Systems</h3>
+                        </div>
+                        <div class="col-md-10 col-xs-offset-2">
+                            <p>
+                                Customizable POS systems tailored to streamline operations for various industries.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="col-xs-2 box-icon">
+                            <div class="fa fa-cogs"></div>
+                        </div>
+                        <div class="col-xs-10">
+                            <h3>ERP Solutions</h3>
+                        </div>
+                        <div class="col-md-10 col-xs-offset-2">
+                            <p>
+                                Comprehensive ERP solutions to integrate business functions and boost productivity.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-4 col-md-pull-8 ">
+                <img class="img-responsive" src="img/1.jpg" alt="VenomHUB Services" />
+            </div>
         </div>
-    </section>
-
-
-
-
+    </div>
+</section>
 
     <!-- Features -->
-    <section class="page-section section-grey">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">SPECIAL</span><br/>FEATURES</h2>
-                    <hr class="title-underline " />
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Clean Code</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+<section class="page-section section-grey">
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title-section"><span class="title-regular">KEY</span><br />SERVICES</h2>
+                <hr class="" />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Custom Software</h4>
+                                <p>Tailored solutions for your business needs.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-expand"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Bootstrap 3</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Dynamic Websites</h4>
+                                <p>Responsive, scalable websites to grow with you.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-font"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Font Awesome</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>POS Systems</h4>
+                                <p>Efficient, customizable systems for all industries.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-eye"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Color Options</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>ERP Solutions</h4>
+                                <p>Streamline operations with our comprehensive ERP systems.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-picture-o"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Clean Headers</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Management Systems</h4>
+                                <p>Specialized systems for education, healthcare, and more.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-archive"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Portfolio</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-cube"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Portfolio</h4>
+                                <p>Showcase your work with elegant portfolio designs.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-expand"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Lightbox</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Innovative Design</h4>
+                                <p>Creative and modern design for all projects.</p>
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="feature-box">
-                                <div class="feature-box-icon">
-                                    <i class="fa fa-picture-o"></i>
-                                </div>
-                                <div class="feature-box-info">
-                                    <h4>Gallery</h4>
-                                    <p>Lorem ipsum dolor sit amet</p>
-                                </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-chart-bar"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Data Solutions</h4>
+                                <p>Data-driven systems for better business decisions.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-
-
-
-
-    <!-- Full Spotlight left-->
-    <section class="page-section-no-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container col-md-6">
-                    <div class="row">
-                        <div class="col-md-7 col-md-offset-4 spotlight-container">
-                            <h2 class="title-section"><span class="title-regular">FULL LEFT</span><br/>SPOTLIGHT</h2>
-                            <hr class="title-underline" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                            </p>
-                            <a href="#" class="btn btn-primary">More Information</a>
-                        </div>
+    <!-- Spotlight Section -->
+<section class="page-section-no-padding">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container col-md-6">
+                <div class="row">
+                    <div class="col-md-7 col-md-offset-4 spotlight-container">
+                        <h2 class="title-section"><span class="title-regular">OUR</span><br />EXPERTISE</h2>
+                        <hr class="" />
+                        <p>
+                            At VenomHUB, we specialize in developing cutting-edge software solutions tailored to your business needs.
+                            From dynamic websites to comprehensive POS systems, we ensure seamless integration and innovative designs.
+                        </p>
+                        <a href="sales-page.html" class="btn btn-primary">Explore Services</a>
                     </div>
                 </div>
-                <div class="col-md-6 spotlight-img-cont" style="background-image: url(http://placehold.it/651x431); "> </div>
+            </div>
+            <div class="col-md-6 spotlight-img-cont"  style="background-image: url('img/spotlight1.jpg'); width: 600px;">
             </div>
         </div>
-    </section>
-
-
-
-
-
-    <!-- Full Spotlight right-->
-    <section class="page-section-no-padding">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="container col-md-6 col-md-push-6">
-                    <div class="row">
-                        <div class="col-md-7 col-md-offset-1 spotlight-container">
-                            <h2 class="title-section"><span class="title-regular">FULL RIGHT</span><br/>SPOTLIGHT</h2>
-                            <hr class="title-underline" />
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                            </p>
-                            <a href="#" class="btn btn-primary">More Information</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-pull-6 spotlight-img-cont" style="background-image: url(http://placehold.it/647x431); "> </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
+    </div>
+</section>
 
     <!-- Our Services -->
-    <section class="page-section ">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>SERVICES</h2>
-                    <hr class="title-underline" />
+<section class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="title-section"><span class="title-regular">OTHERS</span><br />SERVICES</h2>
+                <hr class="" />
+            </div>
+        </div>
+        <div class="row">
+            <!-- Photography Service -->
+            <div class="col-md-4">
+                <div class="col-xs-2 box-icon">
+                    <div class="fa fa-camera"></div>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="col-xs-2 box-icon">
-                        <div class="fa fa-desktop"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h4>WEBDESGIN</h4>
-                        <h5>Lorem Ipsum Dolor</h5>
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                        </p>
-                    </div>
+                <div class="col-xs-10">
+                    <h4>PHOTOGRAPHY SERVICE</h4>
+                    <h5>Capturing Moments</h5>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="col-xs-2 box-icon">
-                        <div class="fa fa-clipboard"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h4>TEMPLATES</h4>
-                        <h5>Lorem Ipsum Dolor</h5>
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                        </p>
-                    </div>
+                <div class="col-md-12">
+                    <p>
+                        Our professional photography services are tailored to capture the essence of your brand or special moments, ensuring high-quality, visually stunning images.
+                    </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 ">
-                    <div class="col-xs-2 box-icon">
-                        <div class="fa fa-camera"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h4>PHOTOGRAPHY</h4>
-                        <h5>Lorem Ipsum Dolor</h5>
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                        </p>
-                    </div>
+
+            <!-- Digital Marketing Services -->
+            <div class="col-md-4">
+                <div class="col-xs-2 box-icon">
+                    <div class="fa fa-bullhorn"></div>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="col-xs-2 box-icon">
-                        <div class="fa fa-pencil"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h4>GRAPHICS</h4>
-                        <h5>Lorem Ipsum Dolor</h5>
-                    </div>
-                    <div class="col-xs-12">
-                        <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                        </p>
-                    </div>
+                <div class="col-xs-10">
+                    <h4>DIGITAL MARKETING SERVICES</h4>
+                    <h5>Boost Your Presence</h5>
                 </div>
-                <div class="col-md-4 ">
-                    <div class="col-xs-2 box-icon">
-                        <div class="fa fa-bullseye"></div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h4>BRANDING</h4>
-                        <h5>Lorem Ipsum Dolor</h5>
-                    </div>
-                    <div class="col-md-12">
-                        <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                        </p>
-                    </div>
+                <div class="col-md-12">
+                    <p>
+                        We offer comprehensive digital marketing solutions, from social media campaigns to SEO strategies, designed to elevate your online presence and drive engagement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Production Team Support -->
+            <div class="col-md-4">
+                <div class="col-xs-2 box-icon">
+                    <div class="fa fa-cogs"></div>
+                </div>
+                <div class="col-xs-10">
+                    <h4>PRODUCTION TEAM SUPPORT</h4>
+                    <h5>Efficient Operations</h5>
+                </div>
+                <div class="col-md-12">
+                    <p>
+                        Our production team support service ensures smooth operations from start to finish, providing expertise in project management, resource coordination, and logistics.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <!-- Iris Collection (Ladies Wear) -->
+            <div class="col-md-4">
+                <div class="col-xs-2 box-icon">
+                    <div class="fa fa-female"></div>
+                </div>
+                <div class="col-xs-10">
+                    <h4>IRIS COLLECTION</h4>
+                    <h5>Exclusive Ladies Wear</h5>
+                </div>
+                <div class="col-md-12">
+                    <p>
+                        Discover the Iris Collection, our exclusive line of ladies wear that combines elegance and style with modern fashion trends.
+                    </p>
+                </div>
+            </div>
 
-
-
+            <!-- Personal Consultation Service -->
+            <div class="col-md-4">
+                <div class="col-xs-2 box-icon">
+                    <div class="fa fa-user"></div>
+                </div>
+                <div class="col-xs-10">
+                    <h4>PERSONAL CONSULTATION SERVICE</h4>
+                    <h5>Tailored Solutions</h5>
+                </div>
+                <div class="col-md-12">
+                    <p>
+                        Our personal consultation service provides one-on-one guidance to help you achieve your business or personal goals with custom-tailored solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <!-- Portfolio / Projects -->
@@ -612,9 +581,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -638,9 +612,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -664,9 +643,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -690,9 +674,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -716,9 +705,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -742,9 +736,14 @@
                                                 <h4>Category</h4>
                                             </div>
                                             <div class="col-md-12 info">
-                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...</p>
-                                                <p><a title="Project Image" class="fancybox-pop fancybox.image" href="http://placehold.it/625x450"><i class="fa fa-search fa-border fa-2x"></i></a>
-                                                    <a title="Project Link" href="portfolio-item.html"><i class="fa fa-link fa-border fa-2x"></i></a></p>
+                                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                                    nonumy eirmod tempor invidunt ut labore et dolore...</p>
+                                                <p><a title="Project Image" class="fancybox-pop fancybox.image"
+                                                        href="http://placehold.it/625x450"><i
+                                                            class="fa fa-search fa-border fa-2x"></i></a>
+                                                    <a title="Project Link" href="portfolio-item.html"><i
+                                                            class="fa fa-link fa-border fa-2x"></i></a>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -766,19 +765,16 @@
 
     </section>
 
-
-
-
-
     <!-- Our Clients -->
     <section class="page-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>CLIENTS</h2>
-                    <hr class="title-underline" />
+                    <h2 class="title-section"><span class="title-regular">OUR</span><br />CLIENTS</h2>
+                    <hr class="" />
                     <p>
-                        Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                        Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam
+                        volutpat suscipit antena.
                     </p>
                 </div>
                 <div class="col-md-8 col-md-pull-4 text-center">
@@ -809,19 +805,15 @@
         </div>
     </section>
 
-
-
-
-
     <!-- ALTERNATIVE SECTION -->
     <!-- insert "sec-alternative" class into section tag -->
-
+    <!--
     <section class="page-section sec-alternative" style="background-image: url(img/odd_background.png)">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>SERVICES</h2>
+                    <h2 class="title-section"><span class="title-regular">OUR</span><br />SERVICES</h2>
                     <hr class="title-underline" />
                 </div>
                 <div class="col-md-4 ">
@@ -834,7 +826,8 @@
                     </div>
                     <div class="col-md-12">
                         <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur
+                            quam volutpat suscipit antena.
                         </p>
                     </div>
                 </div>
@@ -848,7 +841,8 @@
                     </div>
                     <div class="col-md-12">
                         <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur
+                            quam volutpat suscipit antena.
                         </p>
                     </div>
                 </div>
@@ -865,7 +859,8 @@
                     </div>
                     <div class="col-md-12">
                         <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur
+                            quam volutpat suscipit antena.
                         </p>
                     </div>
                 </div>
@@ -879,7 +874,8 @@
                     </div>
                     <div class="col-xs-12">
                         <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur
+                            quam volutpat suscipit antena.
                         </p>
                     </div>
                 </div>
@@ -893,7 +889,8 @@
                     </div>
                     <div class="col-md-12">
                         <p>
-                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
+                            Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur
+                            quam volutpat suscipit antena.
                         </p>
                     </div>
                 </div>
@@ -901,102 +898,82 @@
 
         </div>
     </section>
-
-
-
-
+-->
 
     <!-- Our Team-->
     <section class="page-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>TEAM</h2>
-                    <hr class="title-underline" />
-                </div>
-                <div class="col-md-12">
-                    <img class="img-responsive" src="http://placehold.it/1148x550" alt="" />
-                </div>
-            </div>
-            <div class="text-center margin-top-30">
-                <button type="button" class="btn btn-primary">MORE ABOUT US <i class="fa fa-arrow-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Left Spotlight-->
-    <section class="page-section section-grey">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5  spotlight-container">
-                    <h2 class="title-section"><span class="title-regular">LEFT</span><br/>SPOTLIGHT</h2>
-                    <hr class="title-underline" />
+                <div class="col-md-4 col-md-push-8">
+                    <h2 class="title-section">
+                        <span class="title-regular">OUR</span><br />TEAM
+                    </h2>
+                    <hr class="" />
                     <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam
+                        volutpat suscipit antena.
                     </p>
                 </div>
-                <div class="col-md-6 col-md-push-1 padding-0">
-                    <img class=" img-responsive" src="http://placehold.it/560x431" alt="" />
+                <div class="col-md-8 col-md-pull-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="img/team/1.jpeg" alt="Team Member 1" class="team-img" />
+                                <div class="team-info">
+                                    <h4 class="team-name">John Doe</h4>
+                                    <p class="team-role">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="img/team/3.jpeg" alt="Team Member 2" class="team-img" />
+                                <div class="team-info">
+                                    <h4 class="team-name">Jane Smith</h4>
+                                    <p class="team-role">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="img/team/2.jpeg" alt="Team Member 3" class="team-img" />
+                                <div class="team-info">
+                                    <h4 class="team-name">Sam Wilson</h4>
+                                    <p class="team-role">Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-    <!-- RIGHT SPOTLIGHT-->
-    <section class="page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-push-7 spotlight-container">
-                    <h2 class="title-section"><span class="title-regular">RIGHT</span><br/>SPOTLIGHT</h2>
-                    <hr class="title-underline" />
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                </div>
-                <div class="col-md-6  col-md-pull-5 padding-0">
-                    <img class=" img-responsive" src="http://placehold.it/560x431" alt="" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
 
     <!-- VIDEO -->
-    <div class="page-section-no-padding  video-container" style="background-image: url(http://placehold.it/1920x1080); background-size: cover;">
+     <!--
+    <div class="page-section-no-padding  video-container"
+        style="background-image: url(http://placehold.it/1920x1080); background-size: cover;">
         <div class="video-content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12 ">
                         SEE HOW
-                        <a class="fancybox-media vide-icon" href="http://www.youtube.com/watch?v=opj24KnzrWo"><i class=" fa fa-play-circle-o"></i></a> WE WORK
+                        <a class="fancybox-media vide-icon" href="http://www.youtube.com/watch?v=opj24KnzrWo"><i
+                                class=" fa fa-play-circle-o"></i></a> WE WORK
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
+-->
 
     <!-- BLOG/LATEST NEWS-->
     <section class="page-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="title-section"><span class="title-regular">LATEST</span><br/>NEWS</h2>
-                    <hr class="title-underline" />
+                    <h2 class="title-section"><span class="title-regular">LATEST</span><br />NEWS</h2>
+                    <hr class="" />
                 </div>
             </div>
             <div class="row blog-listing">
@@ -1006,7 +983,10 @@
                         <h2>Article 1</h2>
                         <hr class="title-underline">
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet...
                         </p>
                         <div class="post-meta">
                             <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
@@ -1023,7 +1003,10 @@
                         <h2>Article 2</h2>
                         <hr class="title-underline">
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet...
                         </p>
                         <div class="post-meta">
                             <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
@@ -1040,7 +1023,10 @@
                         <h2>Article 3</h2>
                         <hr class="title-underline">
                         <p>
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet...
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                            Lorem ipsum dolor sit amet...
                         </p>
                         <div class="post-meta">
                             <span><i class="fa fa-calendar"></i> Aug 17, 2016 - 6:53</span>
@@ -1060,262 +1046,208 @@
 
 
     <!-- Highlighted Testmonial -->
-    <div class="page-section-no-padding testmonial-container" style="background-image: url(http://placehold.it/1920x1080); background-size: cover;">
+    <div class="page-section-no-padding testmonial-container"
+        style="background-image: url();">
         <div class="testmonial-content ">
             <div class="container">
                 <div class="text-center">
-                    <p class="margin-0"> "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et"
-                        <br/> - John Doe -
-                        <br/>CEO
+                    <p class="margin-0"> "Thank you for visiting VenomHUB. We're a team of dedicated professionals passionate about crafting innovative software solutions that drive your business forward. Whether you're seeking a custom website, a robust ERP system, or a specialized management solution, we're here to partner with you every step of the way. Discover how our expertise can help you achieve your goals."
+                        <br /> - Alex -
+                        <br />CEO
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-
-
-
-
+    
     <!-- Our Skills -->
-    <section class="page-section">
+     <!--
+    <section class="page-section skills-section">
         <div class="container">
-            <div class="row ">
-                <div class="col-md-12 text-center">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>SKILLS</h2>
-                    <hr class="title-underline col-centered" />
-                </div>
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <p> Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.</p>
-                </div>
-                <div class="col-md-6">
-                    <p class="margin-0">HTML5</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                            75%
-                        </div>
-                    </div>
-                    <p class="margin-0">CSS3</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width:82%">
-                            82%
-                        </div>
-                    </div>
-                    <p class="margin-0">PHP</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                            65%
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <p class="margin-0">jQuery</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
-                            50%
-                        </div>
-                    </div>
-                    <p class="margin-0">JavaScript</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width:32%">
-                            32%
-                        </div>
-                    </div>
-                    <p class="margin-0">MySQL</p>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width:47%">
-                            47%
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Our Team Creative -->
-    <section class="page-section-no-padding ">
-        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2 class="title-section"><span class="title-regular">OUR</span><br/>TEAM</h2>
+                    <h2 class="title-section">
+                        <span class="title-regular">OUR</span><br />SKILLS
+                    </h2>
                     <hr class="title-underline col-centered" />
                 </div>
-            </div>
-            <div class="row ">
-                <div class="col-md-3 padding-0">
-                    <div class="hovereffect">
-                        <img class=" img-responsive" src="http://placehold.it/480x550" alt="" />
-                        <div class="overlay text-center team-content">
-                            <h3 class="info">JOE DOE</h3>
-                            <p class="info">CEO FOUNDER</p>
-                            <p class="info">Lorem ipsum dolor sit amet, consectetur adivpiscing elit. Proin consequat sollicitudin cursus.</p>
-                            <a href="#" class="info" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="info" title="Google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="info" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
+                <div class="col-md-12 text-center">
+                    <p class="skills-intro">
+                        Our team excels in a range of technologies and practices, ensuring we deliver top-notch solutions for your needs.
+                    </p>
                 </div>
-                <div class="col-md-3 padding-0">
-                    <div class="hovereffect">
-                        <img class=" img-responsive" src="http://placehold.it/480x550" alt="" />
-                        <div class="overlay text-center team-content">
-                            <h3 class="info">JANE DOE</h3>
-                            <p class="info">CO FOUNDER</p>
-                            <p class="info">Lorem ipsum dolor sit amet, consectetur adivpiscing elit. Proin consequat sollicitudin cursus.</p>
-                            <a href="#" class="info" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="info" title="Google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="info" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 padding-0">
-                    <div class="hovereffect">
-                        <img class=" img-responsive" src="http://placehold.it/480x550" alt="" />
-                        <div class="overlay text-center team-content">
-                            <h3 class="info">JAMES DOE</h3>
-                            <p class="info">DEVELOPER</p>
-                            <p class="info">Lorem ipsum dolor sit amet, consectetur adivpiscing elit. Proin consequat sollicitudin cursus.</p>
-                            <a href="#" class="info" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="info" title="Google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="info" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 padding-0">
-                    <div class="hovereffect">
-                        <img class=" img-responsive" src="http://placehold.it/480x550" alt="" />
-                        <div class="overlay text-center team-content">
-                            <h3 class="info">JENNY DOE</h3>
-                            <p class="info">MARKETING</p>
-                            <p class="info">Lorem ipsum dolor sit amet, consectetur adivpiscing elit. Proin consequat sollicitudin cursus.</p>
-                            <a href="#" class="info" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="info" title="Google-plus" target="_blank"><i class="fa fa-google-plus"></i></a>
-                            <a href="#" class="info" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Contact Us -->
-    <section class="page-section-no-padding">
-        <div class="container-fluid">
-            <div class="row ">
-                <div class="col-md-6 col-md-push-6">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-6 contact-container">
-                                <h2 class="title-section"><span class="title-regular">CONTACT</span><br/>US</h2>
-                                <hr class="title-underline" />
-                                <p>
-                                    Maecenas luctus nisi in sem fermentum blat. In nec elit solliudin, elementum, dictum pur quam volutpat suscipit antena.
-                                </p>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="usr" placeholder="NAME">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="email" placeholder="EMAIL">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="5" id="message" placeholder="MESSAGE"></textarea>
-                                </div>
-                                <button type="button" class="btn btn-default">SEND <i class="fa fa-envelope"></i></button>
+                <div class="col-md-12">
+                    <div class="row">
+                        
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/csharp.svg" alt="C#" class="skill-icon-img" />
                             </div>
+                            <h4>C#</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/aspnet.svg" alt="ASP.NET" class="skill-icon-img" />
+                            </div>
+                            <h4>ASP.NET</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/laravel.svg" alt="Laravel" class="skill-icon-img" />
+                            </div>
+                            <h4>Laravel</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/vuejs.svg" alt="VueJS" class="skill-icon-img" />
+                            </div>
+                            <h4>VueJS</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/react.svg" alt="React" class="skill-icon-img" />
+                            </div>
+                            <h4>React</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/flutter.svg" alt="Flutter" class="skill-icon-img" />
+                            </div>
+                            <h4>Flutter</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/uiux.svg" alt="UI/UX" class="skill-icon-img" />
+                            </div>
+                            <h4>UI/UX</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/qa.svg" alt="QA" class="skill-icon-img" />
+                            </div>
+                            <h4>QA</h4>
+                        </div>
+                        <div class="col-md-4 skill-item">
+                            <div class="skill-icon">
+                                <img src="img/skills/db.svg" alt="DB" class="skill-icon-img" />
+                            </div>
+                            <h4>DB</h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-md-pull-6 padding-0 ">
-                    <div id="map" class="img-responsive map-style"></div>
                 </div>
             </div>
         </div>
     </section>
+-->
 
 
-
-
-
-    <!-- FOOTER 1 -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 ">
-                    <div>
-                        <a href="index.html">
-                            <img class="footer-logo" src="img/logo-footer.png" alt="logo">
-                        </a>
+<!-- Contact Us -->
+<section class="page-section contact-us-section">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6 contact-form d-flex flex-column">
+                <h2 class="title-section">
+                    <span class="title-regular">CONTACT</span><br />US
+                </h2>
+                <p class="contact-intro">
+                    Feel free to reach out to us with any questions or inquiries. We're here to assist you and ensure a smooth experience.
+                </p>
+                <form class="flex-grow-1 d-flex flex-column justify-content-between">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
                     </div>
-                    <div>
-                        <address class="margin-bottom-30">
-                            <p>Samplestreet 3<br/>
-                            34117 Kassel<br/>
-                            Germany</p>
-                        </address>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                     </div>
-                    <div class="margin-bottom-30">
-                        <p><i class="fa fa-phone"></i> +49 561 00 00 00 00
-                            <br/>
-                            <i class="fa fa-fax"></i> +49 561 00 00 00 00</p>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" rows="5" id="message" placeholder="Your Message" required></textarea>
                     </div>
-                    <div>
-                        <a href="https://lautenschlager.de">www.lautenschlager.de</a>
-                        <br/>
-                        <a href="mailto:info@lautenschlager.de">info@lautenschlager.de</a>
-                    </div>
-                </div>
-                <div class="col-md-3 footer-menu">
-                    <h4>About Us</h4>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-                    <a href="about-us.html">
-                        <button class="btn btn-primary">Read More</button>
+                    <button type="submit" class="btn btn-primary">
+                        Send <i class="fa fa-envelope"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- Contact Details -->
+            <div class="col-md-6 contact-details d-flex flex-column">
+                <h3>Contact Details</h3>
+                <p><strong>Address:</strong> 1234 Example Street, City, Country</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@example.com</p>
+                <p><strong>Business Hours:</strong> Mon - Fri, 9:00 AM - 5:00 PM</p>
+                <div class="flex-grow-1"></div> <!-- Ensures equal height with the form -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- FOOTER 1 -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Contact Info -->
+            <div class="col-md-3 footer-logo-contact">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="VenomHUB Logo" class="footer-logo-img">
                     </a>
                 </div>
-                <div class="col-md-3 footer-blog">
-                    <h4>RECENT BLOG POSTS</h4>
-                    <ul>
-                        <li><a href="#">Blog Entry 1<br/></a> <a href="#">February 10 / John Doe </a></li>
-                        <li><a href="#">Blog Entry 2<br/></a> <a href="#">March 14 / Jane Doe </a></li>
-                        <li><a href="#">Blog Entry 3<br/></a> <a href="#">April 06 / Jenny Doe </a></li>
-                        <li><a href="#">Blog Entry 4<br/></a> <a href="#">June 25 / James Doe </a></li>
-                    </ul>
+                <div class="contact-info">
+                    <address class="margin-bottom-30">
+                        <p>123 Innovation Drive<br />
+                           Suite 500<br />
+                           Tech City, TC 54321<br />
+                           USA
+                        </p>
+                    </address>
+                    <p class="contact-details">
+                        <i class="fa fa-phone"></i> +1 (555) 123-4567<br />
+                        <i class="fa fa-envelope"></i> <a href="mailto:info@venomhub.com">info@venomhub.com</a>
+                    </p>
+                    <p class="website">
+                        <a href="https://venomhub.com">www.venomhub.com</a>
+                    </p>
                 </div>
-                <div class="col-md-3  footer-menu">
-                    <h4>NAVIGATE</h4>
-                    <ul>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="about-me.html">
-                            <li>About Me</li>
-                        </a>
-                        <a href="about-us.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="our-team.html">
-                            <li>Our Team</li>
-                        </a>
-                        <a href="blog-right-sidebar.html">
-                            <li>Blog</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-                </div>
+            </div>
 
+            <!-- About Us Section -->
+            <div class="col-md-3 footer-about-us">
+                <h4>About Us</h4>
+                <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your business forward. Our team of experts is here to help you with custom software, web development, and more.</p>
+                <a href="about-us.html" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <!-- Recent Blog Posts -->
+            <div class="col-md-3 footer-blog">
+                <h4>Recent Blog Posts</h4>
+                <ul>
+                    <li><a href="#">How We Revolutionize Tech Solutions</a><br /><small>September 12 / Alex Smith</small></li>
+                    <li><a href="#">Top Trends in Web Development</a><br /><small>August 30 / Jamie Doe</small></li>
+                    <li><a href="#">Understanding Modern ERP Systems</a><br /><small>July 15 / Chris Johnson</small></li>
+                    <li><a href="#">The Future of UI/UX Design</a><br /><small>June 25 / Taylor Lee</small></li>
+                </ul>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-md-3 footer-navigation">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="blog-right-sidebar.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <!-- FOOTER 2 -->
     <footer class="page-section-no-padding  footer2-container">
@@ -1323,9 +1255,20 @@
             <div class="row">
                 <!-- Copyright -->
                 <div class="col-xs-6">
-                    <p>Follow me on <a href="https://twitter.com/lautenschlagera" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #38A1F3;"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a></p>
-            		<p>Template created for free commercial use by Andreas Lautenschlager.<br>More free downloads under <a href="https:/lautenschlager.de" target="_blank">lautenschlager.de</a></p>
-            		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="fixed"></a><br>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+                    <p>Follow me on <a href="https://twitter.com/lautenschlagera" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                style="fill: #38A1F3;">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                                </path>
+                            </svg></a></p>
+                    <p>Template created for free commercial use by Andreas Lautenschlager.<br>More free downloads under
+                        <a href="https:/lautenschlager.de" target="_blank">lautenschlager.de</a></p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img
+                            alt="Creative Commons License" style="border-width:0"
+                            src="https://i.creativecommons.org/l/by/4.0/88x31.png" class="fixed"></a><br>This work is
+                    licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
+                        target="_blank">Creative Commons Attribution 4.0 International License</a>.
                 </div>
 
                 <!-- Social Links -->
@@ -1366,21 +1309,57 @@
     <!-- Initiate Fancybox/Lightbox for Videos -->
     <script type="text/javascript">
         const slider = document.getElementById('slider');
-    const imageContainer = document.getElementById('slider-images');
-    const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
+        const imageContainer = document.getElementById('slider-images');
+        const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        let sliderInterval;
 
-    let currentIndex = 0;
+        function showSlide(index) {
+            currentIndex = index;
+            slider.style.backgroundImage = `url(${images[currentIndex]})`;
 
-    function changeBackground() {
-        currentIndex = (currentIndex + 1) % images.length; // Cycle through images
-        slider.style.backgroundImage = `url(${images[currentIndex]})`;
-    }
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
 
-    // Change image every 5 seconds
-    setInterval(changeBackground, 5000);
+        function changeSlide(step) {
+            currentIndex = (currentIndex + step + images.length) % images.length;
+            showSlide(currentIndex);
+        }
 
-    // Initial background
-    slider.style.backgroundImage = `url(${images[0]})`;
+        function autoSlide() {
+            sliderInterval = setInterval(() => changeSlide(1), 5000);
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            changeSlide(1);
+            clearInterval(sliderInterval);
+            autoSlide(); // Restart the interval on manual change
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            changeSlide(-1);
+            clearInterval(sliderInterval);
+            autoSlide();
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const index = parseInt(e.target.getAttribute('data-slide'));
+                showSlide(index);
+                clearInterval(sliderInterval);
+                autoSlide(); // Restart the interval on manual change
+            });
+        });
+
+        // Initial setup
+        showSlide(currentIndex);
+        autoSlide(); // Start the automatic slide
 
         $(document).ready(function () {
             /*
