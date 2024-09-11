@@ -132,7 +132,7 @@
 
 
     <!-- Hero Header -->
-    <header class="hero-header" style="background-image: url('http://placehold.it/1900x1250');">
+    <header class="hero-header" id="slider">
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To Elsa!</div>
@@ -141,6 +141,14 @@
             </div>
         </div>
     </header>
+    
+    <!-- Hidden images for the slider -->
+    <div id="slider-images" style="display: none;">
+        <img src="img/slide1.jpg" alt="Slide 1">
+        <img src="img/slide2.jpg" alt="Slide 2">
+        <img src="img/slide3.jpg" alt="Slide 3">
+    </div>
+    
 
 
 
@@ -218,10 +226,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
     <!-- Call to Action Primary -->
     <section class="cta cta-primary">
@@ -1361,6 +1365,23 @@
     <script type="text/javascript" src="extensions/fancybox/jquery.fancybox-media.js"></script>
     <!-- Initiate Fancybox/Lightbox for Videos -->
     <script type="text/javascript">
+        const slider = document.getElementById('slider');
+    const imageContainer = document.getElementById('slider-images');
+    const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
+
+    let currentIndex = 0;
+
+    function changeBackground() {
+        currentIndex = (currentIndex + 1) % images.length; // Cycle through images
+        slider.style.backgroundImage = `url(${images[currentIndex]})`;
+    }
+
+    // Change image every 5 seconds
+    setInterval(changeBackground, 5000);
+
+    // Initial background
+    slider.style.backgroundImage = `url(${images[0]})`;
+
         $(document).ready(function () {
             /*
              *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
@@ -1380,6 +1401,7 @@
                 });
         });
     </script>
+
 
 </body>
 

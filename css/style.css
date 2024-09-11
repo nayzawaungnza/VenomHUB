@@ -17,7 +17,7 @@ Primary:                                #50b8e6
 Primary Shade:                          #c84600
 Text:                                   #7a7c82
 Grey:                                   #eee
-Dark Grey:                              #333
+Dark Grey:                              #254354
 Primary Footer                          #222
 Secondary Footer:                       #111
 
@@ -130,7 +130,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333;
+    color: #254354;
 }
 
 h1 {
@@ -204,7 +204,7 @@ a:focus {
 
 .title-regular {
     font-weight: 500;
-    color: #333;
+    color: #254354;
 }
 
 .title-underline {
@@ -722,12 +722,12 @@ a:focus {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background-color: initial;
-    color: #50b8e6;
+    color: #f89433;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #50b8e6;
+    color: #f89433;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -745,12 +745,12 @@ a:focus {
     .dropdown-menu > .active > a:hover,
     .dropdown-menu > .active > a:focus {
         color: #fff;
-        background-color: #50b8e6;
+        background-color: #f89433;
     }
     .dropdown-menu > li > a:hover,
     .dropdown-menu > li > a:focus {
         color: #fff;
-        background-color: #50b8e6;
+        background-color: #f89433;
     }
     .dropdown-menu li a {
         width: 200px;
@@ -768,7 +768,7 @@ a:focus {
     font-weight: 600;
     padding: 6px 15px;
     font-size: 16px;
-    color: #50b8e6;
+    color: #f89433;
 }
 
 
@@ -929,7 +929,7 @@ a:focus {
 }
 
 .sidebar .nav > li > a {
-    color: #333;
+    color: #254354;
     border-bottom: 1px solid #ccc;
     padding: 10px;
     display: block;
@@ -956,7 +956,7 @@ a:focus {
 /* 07 - Page Title & Breadcrumps
 -------------------------------------------------- */
 
-. .form-inline {
+ .form-inline {
     display: inline;
 }
 
@@ -970,7 +970,7 @@ a:focus {
 /* Page Header */
 
 .page-header {
-    background-color: #333;
+    background-color: #254354;
     border-bottom: 5px solid #ccc;
     margin: 0 0 35px 0;
     min-height: 50px;
@@ -1003,7 +1003,7 @@ a:focus {
 /* Page Header Picture */
 
 .page-header-picture {
-    background: #333;
+    background: #254354;
     background-size: cover;
     text-align: center;
     background-repeat: no-repeat;
@@ -1034,7 +1034,7 @@ a:focus {
 -------------------------------------------------- */
 
 .sec-alternative {
-    background: #333;
+    background: #254354;
 }
 
 .sec-alternative span.title-regular {
@@ -1284,7 +1284,7 @@ a:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     color: #fff;
     line-height: 30px;
-    background-color: #333;
+    background-color: #254354;
 }
 
 .product ul {
@@ -1323,7 +1323,7 @@ a:focus {
 }
 
 .popular .type {
-    background-color: #333;
+    background-color: #254354;
 }
 
 .product .pricing-footer {
@@ -1505,13 +1505,13 @@ ul.post-list .post-meta {
     display: inline-block;
     margin: 0 2px 5px 0;
     padding: 3px 10px;
-    border: 1px solid #333;
-    color: #333;
+    border: 1px solid #254354;
+    color: #254354;
     letter-spacing: 1px;
 }
 
 .tags a:hover {
-    background: #333;
+    background: #254354;
     color: #fff;
     border: 1px solid #eee;
 }
@@ -1714,7 +1714,7 @@ footer .col-md-3 {
 -------------------------------------------------- */
 
 .video-container {
-    background: #333 fixed;
+    background: #254354 fixed;
     background-position: center top;
     background-size: 100% auto;
     text-align: center;
@@ -2029,7 +2029,7 @@ ul.filter > li span {
 
 .grid-sizer,
 .grid-item {
-    width: 33.333%;
+    width: 33.254354%;
 }
 
 .grid-item {
