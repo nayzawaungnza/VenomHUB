@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Venom HUB">
+
+
+    <title>Venom HUB - Software Development</title>
+
+    <!-- normalize core CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/carousel.css" rel="stylesheet">
+    <link href="bootstrap/fonts/glyphicons-halflings-regular.eot" rel="stylesheet">
+
+    <!-- Load jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Google Fonts - Change if needed -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,400,700,300,600' rel='stylesheet'
+        type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Menu shrinking -->
+    <script type="text/javascript" src="js/menu.js"></script>
+
+    <!-- Main styles of this template -->
+    <link href="css/style.min.css?v=1.0.0" rel="stylesheet">
+
+    <!-- Custom CSS. Input here your changes -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo"></a>
+            </div>
+            <nav class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Key Services</a></li>
+                            <li><a href="othersservices.html">Other Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Profile<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="ourteam.html">Our Team</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="hero-header" id="slider">
+        <!--<div class="overlay"></div>-->
+        <div class="container">
+            <!--
+            <div class="intro-text">
+                <h1 class="intro-lead-in">Welcome To Venom HUB!</h1>
+                <h2 class="intro-heading">Your Trusted Software Development Partner</h2>
+                
+            </div>
+        -->
+            <!-- Dots with embedded controls -->
+            <div class="dots-controls">
+                <button id="prev" class="control-btn">&#10094;</button>
+                <div class="dots">
+                    <span class="dot" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+                <button id="next" class="control-btn">&#10095;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hidden images for the slider -->
+    <div id="slider-images" style="display: none;">
+        <img src="img/slide1.jpg" alt="Slide 1">
+        <img src="img/slide2.jpg" alt="Slide 2">
+        <img src="img/slide3.jpg" alt="Slide 3">
+    </div>
+
+<section class="page-section padding-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="title-section"><span class="title-regular">KEY</span><br />SERVICES</h2>
+                <hr class="" />
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-desktop"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Custom Software</h4>
+                                <p></p>
+                                <p>At Venom HUB, we believe that every business has its own unique challenges and goals. That’s why we provide fully customised software solutions that are designed to fit your specific needs. Whether you’re looking to improve internal processes, enhance customer engagement, or introduce new digital capabilities, our team of expert developers will create software that solves your problems efficiently. We don’t just develop software; we work alongside you, understanding your business requirements, to build solutions that evolve as your company grows. Our custom software is scalable, adaptable, and always designed with your long-term success in mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Dynamic Websites</h4>
+                                <p></p>
+                                <p>In the digital age, your website is often the first point of contact for your customers. Venom HUB specialises in building dynamic, responsive websites that not only look great but also function seamlessly across all devices—be it a desktop, tablet, or smartphone. Our websites are built to grow with your business, allowing you to easily update and expand content as needed. Whether you’re launching a new product, setting up an online portfolio, or building an e-commerce platform, we ensure your website provides an exceptional user experience, making it easy for visitors to navigate and engage with your brand. With Venom HUB, your online presence is in expert hands.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-shopping-cart"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>POS Systems</h4>
+                                <p></p>
+                                <p>A well-designed POS (Point of Sale) system can significantly improve the efficiency of your business. At Venom HUB, we create customisable POS systems tailored to fit the specific needs of various industries, including retail, restaurants, beauty salons, and mobile shops. Our POS systems are designed to be user-friendly, allowing you to manage sales, track inventory, and handle customer transactions all in one place. With the flexibility to integrate features such as loyalty programs, inventory alerts, and sales reporting, our POS solutions help you run your business smoothly and efficiently. We focus on giving you the tools you need to enhance customer service and streamline your day-to-day operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>ERP Solutions</h4>
+                                <p></p>
+                                <p>Managing a business requires juggling many different processes—accounting, human resources, inventory, and procurement, just to name a few. Venom HUB offers comprehensive ERP (Enterprise Resource Planning) solutions that integrate all of these processes into a single system, providing you with real-time data and insights to make smarter decisions. Our ERP systems automate routine tasks, reduce errors, and improve collaboration across departments. We also partner with Odoo, one of the leading ERP platforms, to provide customisable solutions tailored to your business size and industry. Additionally, Venom HUB is developing its own ERP system to deliver even more flexibility and control, ensuring your operations run smoothly as your business scales.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Management Systems</h4>
+                                <p></p>
+                                <p>Managing complex operations can be a challenge, but Venom HUB is here to help. We develop specialised management systems for a wide range of industries, including education, healthcare, and libraries. For educational institutions, we offer Learning Management Systems (LMS) that make it easy to deliver courses online and manage student progress. In healthcare, our Hospital Management Systems (HMS) streamline patient care, scheduling, and billing, improving both efficiency and patient satisfaction. Our library management systems, on the other hand, simplify the tracking and lending of books, making it easier for libraries to serve their patrons. Whatever industry you’re in, our management systems are built to optimise operations and improve overall productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-cube"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Portfolio</h4>
+                                <p></p>
+                                <p>Your portfolio is a reflection of your work, and Venom HUB knows how important it is to make a strong impression. We create beautifully designed portfolio websites that highlight your best work, whether you’re an artist, a photographer, or a business showcasing case studies. Our portfolio designs are both elegant and functional, ensuring that your work is presented in a way that is easy for visitors to browse while also being visually striking. These websites are fully responsive, meaning they look great on any device, from mobile phones to large screens. With Venom HUB’s portfolio solutions, you can present your projects professionally and attract new clients with ease.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-lightbulb-o"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Innovative Design</h4>
+                                <p></p>
+                                <p>Good design is about more than just making things look nice—it’s about creating a user experience that’s intuitive, engaging, and effective. At Venom HUB, we pride ourselves on our innovative design approach. Whether we’re designing a website, software interface, or branding materials, we focus on delivering creative and modern solutions that meet both aesthetic and functional requirements. Our designers work closely with you to understand your brand and target audience, ensuring that every project is aligned with your vision. From sleek UI/UX design to impactful marketing visuals, we bring creativity and professionalism to every aspect of your project.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="feature-box">
+                            <div class="feature-box-icon">
+                                <i class="fa fa-chart-bar"></i>
+                            </div>
+                            <div class="feature-box-info">
+                                <h4>Data Solutions</h4>
+                                <p></p>
+                                <p>In a world driven by data, having the right systems to manage, analyse, and leverage information is crucial to making informed business decisions. Venom HUB provides advanced data solutions that allow businesses to turn raw data into actionable insights. Whether you need a custom-built database, analytics tools, or reporting systems, we develop data-driven applications that help you monitor key performance indicators and track your business’s progress in real time. Our solutions are secure, reliable, and tailored to your industry’s specific needs, enabling you to make better decisions based on accurate, up-to-date information. With Venom HUB, you can unlock the full potential of your business data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+    <!-- Pricing Tables 4 Columns -->
+    <section class="page-section section-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="title-section"><span class="title-regular">GENERAL PRICING</span></h2>
+                    <hr class="title-underline col-centered" />
+                </div>
+            </div>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Basic</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="price">Price</td>
+                        <td class="price">$100 <br>(Starting form $100 up to requirements)</td>
+                        <td class="price">$500 <br>(Starting form $400 up to requirements)</td>
+                        <td class="price">$1,999<br>(Starting form $1,999 up to requirements)</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Software</td>
+                        <td class="features">✔ Limited to single functionality</td>
+                        <td class="features">✔ Includes basic features and integrations</td>
+                        <td class="features">✔ Fully customised with advanced integrations</td>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Websites</td>
+                        <td class="features">✔ Up to 5 pages</td>
+                        <td class="features">✔ Up to 10 pages</td>
+                        <td class="features">✔ Unlimited pages with e-commerce options</td>
+                    </tr>
+                    <tr>
+                        <td>POS Systems</td>
+                        <td class="features">✔ Basic features for retail</td>
+                        <td class="features">✔ Customisable for restaurants and small shops</td>
+                        <td class="features">✔ Full-featured system with multi-location support</td>
+                    </tr>
+                    <tr>
+                        <td>ERP Solutions</td>
+                        <td class="features">❌ Not included</td>
+                        <td class="features">✔ Standard ERP modules</td>
+                        <td class="features">✔ Complete ERP integration, including custom modules</td>
+                    </tr>
+                    <tr>
+                        <td>Management Systems</td>
+                        <td class="features">❌ Not included</td>
+                        <td class="features">✔ LMS/HMS with basic freatures or additional features based on requirements</td>
+                        <td class="features">✔ Fully customisable for specific industry needs</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td class="features">✔ Simple portfolio design</td>
+                        <td class="features">✔ Professional portfolio with blog integration</td>
+                        <td class="features">✔ Fully dynamic with custom animations and user interactions</td>
+                    </tr>
+                    <tr>
+                        <td>Innovative Design</td>
+                        <td class="features">✔ Basic design templates</td>
+                        <td class="features">✔ Semi-custom design options</td>
+                        <td class="features">✔ Fully bespoke design with branding consultation</td>
+                    </tr>
+                    <tr>
+                        <td>Data Solutions</td>
+                        <td class="features">❌ Not included</td>
+                        <td class="features">✔ Basic data analytics tools</td>
+                        <td class="features">✔ Advanced data management with reporting and dashboards</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td class="features">Email support (5 days/week)</td>
+                        <td class="features">Email & phone support (7 days/week)</td>
+                        <td class="features">Priority support with dedicated account manager</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Time</td>
+                        <td class="features">4-6 weeks</td>
+                        <td class="features">6-8 weeks</td>
+                        <td class="features">8-12 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Pricing Tables 3 Columns -->
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="title-section"><span class="title-regular">ADDITIONAL SERVICES</span></h2>
+                    <hr class="title-underline col-centered" />
+                </div>
+            </div>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Basic</th>
+                        <th>Standard</th>
+                        <th>Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="price">Customization</td>
+                        <td class="price">$150 <br>(Starting from $150)</td>
+                        <td class="price">$300 <br>(Starting from $300)</td>
+                        <td class="price">$500 <br>(Fully customized solutions. Starting from $500)</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Design</td>
+                        <td class="features">✔ Basic templates</td>
+                        <td class="features">✔ Semi-custom design options</td>
+                        <td class="features">✔ Fully custom design with branding</td>
+                    </tr>
+                    <tr>
+                        <td>Integration</td>
+                        <td class="features">✔ Limited third-party integrations</td>
+                        <td class="features">✔ Standard integrations</td>
+                        <td class="features">✔ Advanced integration with multiple APIs</td>
+                    </tr>
+                    <tr>
+                        <td>Support</td>
+                        <td class="features">✔ Email support (5 days/week)</td>
+                        <td class="features">✔ Email & phone support (7 days/week)</td>
+                        <td class="features">✔ Priority support with dedicated assistance</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Time</td>
+                        <td class="features">3-4 weeks</td>
+                        <td class="features">4-6 weeks</td>
+                        <td class="features">6-8 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section class="page-section section-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="title-section"><span class="title-regular">MAINTENANCE PLANS</span></h2>
+                    <hr class="title-underline col-centered" />
+                </div>
+            </div>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Services Included</th>
+                        <th>Exclusions</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="plan-name">Basic Maintenance Plan</td>
+                        <td class="features">
+                            - Monthly system health check.<br>
+                            - Bug fixes (up to 5 minor issues per month).<br>
+                            - Email support (response within 48 hours).
+                        </td>
+                        <td class="exclusions">
+                            - Major feature additions or upgrades.<br>
+                            - Phone support.
+                        </td>
+                        <td class="price">$25/$50 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Standard Maintenance Plan</td>
+                        <td class="features">
+                            - Weekly system health check.<br>
+                            - Bug fixes (up to 10 issues per month).<br>
+                            - Minor feature updates (up to 2 per month).<br>
+                            - Email and chat support (response within 24 hours).<br>
+                            - Monthly performance review.
+                        </td>
+                        <td class="exclusions">
+                            - Major feature development.
+                        </td>
+                        <td class="price">$50/$75/$100 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Premium Maintenance Plan</td>
+                        <td class="features">
+                            - Daily system monitoring.<br>
+                            - Unlimited bug fixes.<br>
+                            - Feature updates (up to 5 new features per month).<br>
+                            - Email, chat, and phone support (response within 12 hours).<br>
+                            - Quarterly performance review.<br>
+                            - Priority support for urgent issues (24/7 response).<br>
+                            - Backup and recovery management.
+                        </td>
+                        <td class="exclusions">
+                            - Custom-built features (quoted separately).
+                        </td>
+                        <td class="price">$200 to $500 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Enterprise Maintenance and Support Plan</td>
+                        <td class="features">
+                            - 24/7 system monitoring and maintenance.<br>
+                            - Unlimited custom feature development.<br>
+                            - Dedicated support team.<br>
+                            - Email, chat, phone, and video conference support.<br>
+                            - Weekly performance reviews.<br>
+                            - Disaster recovery planning and implementation.<br>
+                            - Consultation and scaling assistance.
+                        </td>
+                        <td class="exclusions">
+                            - None (customized per organization).
+                        </td>
+                        <td class="price">Custom pricing (starting at $1,000 per month)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="title-section"><span class="title-regular">SUPPORT PLANS</span></h2>
+                    <hr class="title-underline col-centered" />
+                </div>
+            </div>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Services Included</th>
+                        <th>Support Availability</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="plan-name">Basic Support Plan</td>
+                        <td class="features">
+                            - Email Support (48-hour response time).<br>
+                            - Knowledge Base Access (articles, guides, FAQs).<br>
+                            - Limited User Training (one session per year).
+                        </td>
+                        <td class="availability">
+                            - Monday – Friday, 9 AM – 5 PM (business hours).
+                        </td>
+                        <td class="price">$50 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Standard Support Plan</td>
+                        <td class="features">
+                            - Email and Live Chat Support (24-hour response time for emails, real-time chat).<br>
+                            - Monthly User Training (remote training session).<br>
+                            - Priority Issue Resolution.
+                        </td>
+                        <td class="availability">
+                            - Monday – Friday, 8 AM – 6 PM.
+                        </td>
+                        <td class="price">$100/$150 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Premium Support Plan</td>
+                        <td class="features">
+                            - 24/7 Support (via email, chat, and phone).<br>
+                            - Dedicated Support Manager.<br>
+                            - Weekly Training Sessions.<br>
+                            - Quarterly Webinars.<br>
+                            - Priority Resolution (2-hour response time for critical issues).
+                        </td>
+                        <td class="availability">
+                            - 24/7 support, including weekends and holidays.
+                        </td>
+                        <td class="price">$500 per month</td>
+                    </tr>
+                    <tr>
+                        <td class="plan-name">Enterprise Support Plan</td>
+                        <td class="features">
+                            - 24/7 VIP Support (via email, phone, chat, and video).<br>
+                            - On-site Support.<br>
+                            - Custom User Training.<br>
+                            - User Feedback and Analysis.<br>
+                            - Consultation and Optimization.<br>
+                            - Unlimited Access to Webinars, Training, and Resources.
+                        </td>
+                        <td class="availability">
+                            - 24/7 support with a dedicated account manager and on-site support as needed.
+                        </td>
+                        <td class="price">Custom pricing (starting at $1,000 per month)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+
+    <!-- Our Clients -->
+    <section class="page-section section-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2 class="title-section"><span class="title-regular">OUR</span><br />CLIENTS</h2>
+                    <hr class="" />
+                    <p>
+                        At VenomHUB, our clients are at the heart of everything we do. We take pride in delivering customized solutions 
+                        that drive success and foster growth. From small businesses to large enterprises, we collaborate closely with each client 
+                        to understand their unique challenges and provide innovative, results-driven solutions.
+                    </p>                    
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="img/partner/Co Co.png" alt="Co Co Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="img/partner/DigiLight (2).png" alt="DigiLight Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="img/partner/Jane.png" alt="Client Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="img/partner/SocialAds2.png" alt="Client Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="img/partner/Iris.png" alt="Client Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                        <div class="col-md-4 text-center" style="padding: 5px;">
+                            <img src="http://placehold.it/168x168" alt="Client Logo" class="client-logo" style="width: 100px; height: 100px;" />
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Primary -->
+    <section class="cta cta-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Discover Our <span>Services</span></h2>
+                    <p>Learn more about our wide range of services tailored to meet your <strong>business needs</strong>. We offer custom solutions for software development, ERP systems, and management tools for various industries.</p>
+                </div>
+                <div class="col-md-2 col-md-push-4 cta-button">
+                    <a href="services.html" class="btn btn-primary" style="padding: 20px 15px;">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER 1 -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!-- Logo and Contact Info -->
+            <div class="col-md-3 footer-logo-contact">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="VenomHUB Logo" class="footer-logo-img">
+                    </a>
+                </div>
+                <div class="contact-info">
+                    <address class="margin-bottom-30">
+                        <p>Bangkok
+                        </p>
+                    </address>
+                    <p class="contact-details">
+                        <i class="fa fa-phone"></i> <br />
+                        <i class="fa fa-envelope"></i> <a href="mailto:venomhubsoftwaredevelopment@gmail.com">venomhubsoftwaredevelopment@gmail.com</a>
+                    </p>
+                    
+                </div>
+            </div>
+
+            <!-- About Us Section -->
+            <div class="col-md-3 footer-about-us">
+                <h4>About Us</h4>
+                <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your business forward. Our team of experts is here to help you with custom software, web development, and more.</p>
+                <a href="about-us.html" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <!-- Recent Blog Posts -->
+            <div class="col-md-3 footer-blog">
+                <h4>Recent Blog Posts</h4>
+                <ul>
+                    <li><a href="#">How We Revolutionize Tech Solutions</a><br /><small>September 12 / Alex Smith</small></li>
+                    <li><a href="#">Top Trends in Web Development</a><br /><small>August 30 / Jamie Doe</small></li>
+                    <li><a href="#">Understanding Modern ERP Systems</a><br /><small>July 15 / Chris Johnson</small></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-md-3 footer-navigation">
+                <h4>Navigate</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <!-- Loads Bootstrap Main JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Initiate Google Maps - For more Infos look into the documentation -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/google-map.js"></script>
+
+    <!-- Initiate Portoflio Script -->
+    <script src="extensions/portfolio/isotope.min.js"></script>
+    <script src="extensions/portfolio/portfolio.js"></script>
+
+    <!-- Initiate Fancybox/Lightbox Script -->
+    <!-- Fancybox/Lightbox -->
+    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="extensions/fancybox/jquery.fancybox.css" media="screen" />
+    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox-media.js"></script>
+    <!-- Initiate Fancybox/Lightbox for Videos -->
+    <script type="text/javascript">
+        const slider = document.getElementById('slider');
+        const imageContainer = document.getElementById('slider-images');
+        const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
+        const dots = document.querySelectorAll('.dot');
+        let currentIndex = 0;
+        let sliderInterval;
+
+        function showSlide(index) {
+            currentIndex = index;
+            slider.style.backgroundImage = `url(${images[currentIndex]})`;
+
+            dots.forEach((dot, i) => {
+                dot.classList.remove('active');
+                if (i === currentIndex) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function changeSlide(step) {
+            currentIndex = (currentIndex + step + images.length) % images.length;
+            showSlide(currentIndex);
+        }
+
+        function autoSlide() {
+            sliderInterval = setInterval(() => changeSlide(1), 5000);
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            changeSlide(1);
+            clearInterval(sliderInterval);
+            autoSlide(); // Restart the interval on manual change
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            changeSlide(-1);
+            clearInterval(sliderInterval);
+            autoSlide();
+        });
+
+        dots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const index = parseInt(e.target.getAttribute('data-slide'));
+                showSlide(index);
+                clearInterval(sliderInterval);
+                autoSlide(); // Restart the interval on manual change
+            });
+        });
+
+        // Initial setup
+        showSlide(currentIndex);
+        autoSlide(); // Start the automatic slide
+
+        $(document).ready(function () {
+            /*
+             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+             */
+            $('.fancybox-media')
+                .attr('rel', 'media-gallery')
+                .fancybox({
+                    openEffect: 'none',
+                    closeEffect: 'none',
+                    prevEffect: 'none',
+                    nextEffect: 'none',
+                    arrows: false,
+                    helpers: {
+                        media: {},
+                        buttons: {}
+                    }
+                });
+        });
+    </script>
+</body>
+
+</html>

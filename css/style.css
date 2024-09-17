@@ -750,9 +750,9 @@ label {
 /* Logo (change width here) */
 
 .logo {
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
-    padding: 6px 0;
+    padding: 3px 0;
 }
 
 
@@ -1535,133 +1535,152 @@ p.lead {
     }
 }
 
+.services-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+.service:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.service h2 {
+    color: #50b8e6;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+.service p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #50b8e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #0096d6;
+}
+
+.services-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.service {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+}
+.service:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.service h2 {
+    color: #50b8e6;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+.service p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #50b8e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #0096d6;
+}
 
 /* 08_07 - Pricing Tables
 -------------------------------------------------- */
 
-.product {
-    text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    color: #fff;
-    line-height: 30px;
-    background-color: #254354;
-}
-
-.product ul {
-    list-style: none;
+body {
     margin: 0;
-    text-align: center;
-    padding-left: 0px;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-
-.product ul li {
-    padding: 10px 0;
-}
-
-.product ul li i {
-    margin-right: 5px;
-}
-
-.product .price {
-    padding: 40px 10px 20px 10px;
-    font-size: 64px;
-    font-weight: 600;
-}
-
-.product .price small {
-    display: block;
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.product .type {
-    background-color: #50b8e6;
-    padding: 20px 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-.popular .type {
-    background-color: #254354;
-}
-
-.product .pricing-footer {
-    padding: 20px;
-}
-
-.popular .pricing-footer .btn-primary {
+.pricing-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-collapse: collapse;
     background-color: #fff;
-    border-color: #c84600;
-    color: #50b8e6;
-    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-.popular .pricing-footer .btn-primary:focus,
-.popular .pricing-footer .btn-primary.focus {
-    color: #fff;
-    background-color: #c84600;
-    border-color: #50b8e6;
-    cursor: pointer;
-    outline: none;
+.pricing-table th, .pricing-table td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
-
-.popular .pricing-footer .btn-primary:hover {
-    color: #fff;
-    background-color: #c84600;
-    border-color: #50b8e6;
-    outline: none;
-}
-
-.popular .pricing-footer .btn-primary:active,
-.popular .pricing-footer .btn-primary.activey {
-    color: #fff;
-    background-color: #c84600;
-    border-color: #50b8e6;
-    outline: none;
-}
-
-.popular .pricing-footer .btn-primary:active:hover,
-.popular .pricing-footer .btn-primary.active:hover,
-.popular .pricing-footer .btn-primary:active:focus,
-.popular .pricing-footer .btn-primary.active:focus,
-.popular .pricing-footer .btn-primary:active.focus,
-.popular .pricing-footer .btn-primary.active.focus {
-    color: #fff;
-    background-color: #c84600;
-    border-color: #50b8e6;
-    outline: none;
-}
-
-.pricing-table > .col-lg-4,
-.pricing-table > .col-lg-3,
-.pricing-table > .col-md-4,
-.pricing-table > .col-md-3,
-.pricing-table > .col-sm-4,
-.pricing-table > .col-sm-3 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-@media (max-width: 768px) {
-    .pricing-table > .col-lg-4,
-    .pricing-table > .col-lg-3,
-    .pricing-table > .col-md-4,
-    .pricing-table > .col-md-3,
-    .pricing-table > .col-sm-4,
-    .pricing-table > .col-sm-3 {
-        padding-left: 0;
-        padding-right: 0;
-        margin: 20px 0;
-    }
-}
-
-.product.popular {
-    margin-top: -20px;
+.pricing-table th {
     background-color: #50b8e6;
+    color: #fff;
 }
-
-
+.pricing-table td {
+    background-color: #fafafa;
+}
+.pricing-table .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #50b8e6;
+}
+.pricing-table .features {
+    text-align: left;
+}
+.pricing-table .features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing-table .features li {
+    padding: 5px 0;
+}
+.pricing-table .cta {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pricing-table .cta a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #50b8e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.pricing-table .cta a:hover {
+    background-color: #0096d6;
+}
 /* 08_08 - Testmonials
 -------------------------------------------------- */
 
@@ -1687,8 +1706,12 @@ p.lead {
 -------------------------------------------------- */
 
 .client-logo {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin: auto;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .client-logo:hover {
@@ -2690,4 +2713,58 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     background: #50b8e6!important;
+}
+
+/* about us */
+
+.about-us {
+    background-color: #f7f9fc;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.about-us .title-section {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.about-us .title-underline {
+    width: 100px;
+    height: 3px;
+    background-color: #000; /* Change to your desired color */
+    margin: 0 auto; /* Center the underline */
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.title-section {
+    margin-bottom: 20px; /* Adjust for spacing if needed */
+}
+
+.about-us img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-us-content {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #4a4a4a;
+    text-align: justify;
+}
+
+.about-us-content p {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-us .col-md-4 {
+        margin-bottom: 20px;
+    }
 }
