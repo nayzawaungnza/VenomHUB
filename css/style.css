@@ -2730,10 +2730,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .about-us .title-underline {
-    width: 100px;
-    height: 3px;
-    background-color: #000; /* Change to your desired color */
-    margin: 0 auto; /* Center the underline */
+    border-top:2px solid #50b8e6;
+    width: auto;
+    margin: 10px auto;
 }
 
 .justify-content-center {
@@ -2768,3 +2767,42 @@ only screen and (min-device-pixel-ratio: 1.5) {
         margin-bottom: 20px;
     }
 }
+
+.ceo-speech {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.ceo-speech .title-section {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.ceo-speech .title-underline {
+    width: 100px;
+    height: 3px;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+.ceo-speech .ceo-image {
+    width: 250px; /* Increased width */
+    height: 250px; /* Increased height */
+    object-fit: cover;
+    border-radius: 50%; /* Makes the image fully round */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a more polished look */
+}
+
+.ceo-speech .ceo-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.ceo-speech .blockquote-footer {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 10px;
+}
+
