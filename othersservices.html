@@ -205,20 +205,7 @@
         </div>
     </section>
 
-    <!-- Call to Action Primary -->
-    <section class="cta cta-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Discover Our <span>Services</span></h2>
-                    <p>Learn more about our wide range of services tailored to meet your <strong>business needs</strong>. We offer custom solutions for software development, ERP systems, and management tools for various industries.</p>
-                </div>
-                <div class="col-md-2 col-md-push-4 cta-button">
-                    <a href="services.html" class="btn btn-primary" style="padding: 20px 15px;">Explore Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
 <!-- FOOTER 1 -->
 <footer>
@@ -238,27 +225,33 @@
                     </address>
                     <p class="contact-details">
                         <i class="fa fa-phone"></i> <br />
-                        <i class="fa fa-envelope"></i> <a href="mailto:venomhubsoftwaredevelopment@gmail.com">venomhubsoftwaredevelopment@gmail.com</a>
+                        <i class="fa fa-envelope"></i> <a
+                            href="mailto:venomhubsoftwaredevelopment@gmail.com">venomhubsoftwaredevelopment@gmail.com</a>
                     </p>
-                    
+
                 </div>
             </div>
 
             <!-- About Us Section -->
             <div class="col-md-3 footer-about-us">
                 <h4>About Us</h4>
-                <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your business forward. Our team of experts is here to help you with custom software, web development, and more.</p>
-                <a href="about-us.html" class="btn btn-primary">Learn More</a>
+                <p>At VenomHUB, we are dedicated to providing innovative technology solutions that drive your
+                    business forward. Our team of experts is here to help you with custom software, web development,
+                    and more.</p>
+                <a href="about-us.html" class="btn btn-primary mt-3"
+                    style="background-color: #f89433; border-color: #f89433;">Learn More</a>
             </div>
 
             <!-- Recent Blog Posts -->
             <div class="col-md-3 footer-blog">
                 <h4>Recent Blog Posts</h4>
                 <ul>
-                    <li><a href="#">How We Revolutionize Tech Solutions</a><br /><small>September 12 / Alex Smith</small></li>
+                    <li><a href="#">How We Revolutionize Tech Solutions</a><br /><small>September 12 / Alex
+                            Smith</small></li>
                     <li><a href="#">Top Trends in Web Development</a><br /><small>August 30 / Jamie Doe</small></li>
-                    <li><a href="#">Understanding Modern ERP Systems</a><br /><small>July 15 / Chris Johnson</small></li>
-                    
+                    <li><a href="#">Understanding Modern ERP Systems</a><br /><small>July 15 / Chris Johnson</small>
+                    </li>
+
                 </ul>
             </div>
 
@@ -276,101 +269,101 @@
     </div>
 </footer>
 
-    <!-- Scripts -->
-    <!-- Loads Bootstrap Main JS -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+<!-- Loads Bootstrap Main JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- Initiate Google Maps - For more Infos look into the documentation -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/google-map.js"></script>
+<!-- Initiate Google Maps - For more Infos look into the documentation -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="js/google-map.js"></script>
 
-    <!-- Initiate Portoflio Script -->
-    <script src="extensions/portfolio/isotope.min.js"></script>
-    <script src="extensions/portfolio/portfolio.js"></script>
+<!-- Initiate Portoflio Script -->
+<script src="extensions/portfolio/isotope.min.js"></script>
+<script src="extensions/portfolio/portfolio.js"></script>
 
-    <!-- Initiate Fancybox/Lightbox Script -->
-    <!-- Fancybox/Lightbox -->
-    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.js"></script>
-    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox.pack.js"></script>
-    <link rel="stylesheet" type="text/css" href="extensions/fancybox/jquery.fancybox.css" media="screen" />
-    <script type="text/javascript" src="extensions/fancybox/jquery.fancybox-media.js"></script>
-    <!-- Initiate Fancybox/Lightbox for Videos -->
-    <script type="text/javascript">
-        const slider = document.getElementById('slider');
-        const imageContainer = document.getElementById('slider-images');
-        const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
-        const dots = document.querySelectorAll('.dot');
-        let currentIndex = 0;
-        let sliderInterval;
+<!-- Initiate Fancybox/Lightbox Script -->
+<!-- Fancybox/Lightbox -->
+<script type="text/javascript" src="extensions/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="extensions/fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="extensions/fancybox/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="extensions/fancybox/jquery.fancybox-media.js"></script>
+<!-- Initiate Fancybox/Lightbox for Videos -->
+<script type="text/javascript">
+    const slider = document.getElementById('slider');
+    const imageContainer = document.getElementById('slider-images');
+    const images = Array.from(imageContainer.getElementsByTagName('img')).map(img => img.src);
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    let sliderInterval;
 
-        function showSlide(index) {
-            currentIndex = index;
-            slider.style.backgroundImage = `url(${images[currentIndex]})`;
+    function showSlide(index) {
+        currentIndex = index;
+        slider.style.backgroundImage = `url(${images[currentIndex]})`;
 
-            dots.forEach((dot, i) => {
-                dot.classList.remove('active');
-                if (i === currentIndex) {
-                    dot.classList.add('active');
-                }
-            });
-        }
+        dots.forEach((dot, i) => {
+            dot.classList.remove('active');
+            if (i === currentIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }
 
-        function changeSlide(step) {
-            currentIndex = (currentIndex + step + images.length) % images.length;
-            showSlide(currentIndex);
-        }
+    function changeSlide(step) {
+        currentIndex = (currentIndex + step + images.length) % images.length;
+        showSlide(currentIndex);
+    }
 
-        function autoSlide() {
-            sliderInterval = setInterval(() => changeSlide(1), 5000);
-        }
+    function autoSlide() {
+        sliderInterval = setInterval(() => changeSlide(1), 5000);
+    }
 
-        document.getElementById('next').addEventListener('click', () => {
-            changeSlide(1);
+    document.getElementById('next').addEventListener('click', () => {
+        changeSlide(1);
+        clearInterval(sliderInterval);
+        autoSlide(); // Restart the interval on manual change
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        changeSlide(-1);
+        clearInterval(sliderInterval);
+        autoSlide();
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', (e) => {
+            const index = parseInt(e.target.getAttribute('data-slide'));
+            showSlide(index);
             clearInterval(sliderInterval);
             autoSlide(); // Restart the interval on manual change
         });
+    });
 
-        document.getElementById('prev').addEventListener('click', () => {
-            changeSlide(-1);
-            clearInterval(sliderInterval);
-            autoSlide();
-        });
+    // Initial setup
+    showSlide(currentIndex);
+    autoSlide(); // Start the automatic slide
 
-        dots.forEach(dot => {
-            dot.addEventListener('click', (e) => {
-                const index = parseInt(e.target.getAttribute('data-slide'));
-                showSlide(index);
-                clearInterval(sliderInterval);
-                autoSlide(); // Restart the interval on manual change
+    $(document).ready(function () {
+        /*
+         *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+         */
+        $('.fancybox-media')
+            .attr('rel', 'media-gallery')
+            .fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                prevEffect: 'none',
+                nextEffect: 'none',
+                arrows: false,
+                helpers: {
+                    media: {},
+                    buttons: {}
+                }
             });
-        });
-
-        // Initial setup
-        showSlide(currentIndex);
-        autoSlide(); // Start the automatic slide
-
-        $(document).ready(function () {
-            /*
-             *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
-             */
-            $('.fancybox-media')
-                .attr('rel', 'media-gallery')
-                .fancybox({
-                    openEffect: 'none',
-                    closeEffect: 'none',
-                    prevEffect: 'none',
-                    nextEffect: 'none',
-                    arrows: false,
-                    helpers: {
-                        media: {},
-                        buttons: {}
-                    }
-                });
-        });
-    </script>
+    });
+</script>
 </body>
 
 </html>

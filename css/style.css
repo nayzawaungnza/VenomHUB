@@ -211,7 +211,7 @@ a:focus {
 }
 
 .title-section strong {
-    color: #f89433;
+    color: #50b8e6;
     font-weight: 700;
 }
 
@@ -570,6 +570,12 @@ label {
 .img-responsive {
     width: 100%;
     height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.img-responsive:hover {
+    filter: grayscale(0%);
 }
 
 .divider {
@@ -2767,45 +2773,97 @@ only screen and (min-device-pixel-ratio: 1.5) {
         margin-bottom: 20px;
     }
 }
-
+/* General Styling for CEO Sections */
 .ceo-speech {
-    padding: 60px 0;
-    background-color: #f7f7f7;
+    background: linear-gradient(135deg, #ffffff, #f0f4f8); /* Light gradient background */
+    padding: 80px 0; /* More spacious padding */
+    border-radius: 10px; /* Soft rounded edges */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
 }
 
 .ceo-speech .title-section {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem; /* Larger title size */
+    margin-bottom: 30px;
+    color: #50b8e6; /* Accent color */
+    font-family: 'Poppins', sans-serif; /* Modern, clean font */
+    text-transform: uppercase; /* Bold title style */
 }
 
 .ceo-speech .title-underline {
     width: 100px;
-    height: 3px;
-    background-color: #000;
-    margin: 0 auto;
+    height: 4px;
+    background-color: #50b8e6; /* Matching underline color */
+    margin: 10px auto; /* Centered underline */
+    border-radius: 2px; /* Rounded edges */
 }
 
 .ceo-speech .ceo-image {
-    width: 300px; /* Increased width */
-    height: 300px; /* Increased height */
+    width: 300px; /* Reduced size for balance */
+    height: 300px;
     object-fit: cover;
-    border-radius: 50%; /* Makes the image fully round */
+    border-radius: 50%; /* Circular image */
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for a more polished look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+     /* Adding a border for emphasis */
 }
 
 .ceo-speech .ceo-quote {
+    background: rgba(114, 115, 116, 0.05); /* Light, subtle blue background for contrast */
+    padding: 80px;
+    height: 300px;
     font-size: 1.2rem;
-    font-style: italic;
-    color: #555;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif; /* Elegant, readable font */
+    color: #333333; /* Darker text color */
+    border-radius: 10px; /* Rounded edges for the quote */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.ceo-speech .ceo-quote-thank {
+    background: rgba(114, 115, 116, 0.05); /* Light, subtle blue background for contrast */
+    padding: 30px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: 'Merriweather', serif; /* Elegant, readable font */
+    color: #333333; /* Darker text color */
+    border-radius: 10px; /* Rounded edges for the quote */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.ceo-speech .ceo-quote p {
+    margin-bottom: 1.2rem;
 }
 
 .ceo-speech .blockquote-footer {
     font-size: 1rem;
-    color: #888;
-    margin-top: 10px;
+    font-weight: bold;
+    color: #50b8e6; /* Accent color for the footer */
+    margin-top: 20px;
+    font-style: italic; /* Italic for signature-like effect */
 }
 
 .ceo-speech .row.mb-4 {
-    margin-bottom: 80px; /* Adjust as needed */
+    margin-bottom: 50px; /* Balanced spacing */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .ceo-speech {
+        padding: 40px 0;
+    }
+    
+    .ceo-speech .title-section {
+        font-size: 2rem; /* Smaller title size for mobile */
+    }
+    
+    .ceo-speech .ceo-image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .ceo-speech .ceo-quote {
+        font-size: 1rem;
+        padding: 20px;
+    }
 }
