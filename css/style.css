@@ -2786,8 +2786,8 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 .ceo-speech .ceo-image {
-    width: 250px; /* Increased width */
-    height: 250px; /* Increased height */
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
     object-fit: cover;
     border-radius: 50%; /* Makes the image fully round */
     margin-bottom: 20px;
@@ -2806,3 +2806,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     margin-top: 10px;
 }
 
+.ceo-speech .row.mb-4 {
+    margin-bottom: 80px; /* Adjust as needed */
+}
