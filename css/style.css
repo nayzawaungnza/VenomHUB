@@ -570,12 +570,6 @@ label {
 .img-responsive {
     width: 100%;
     height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.img-responsive:hover {
-    filter: grayscale(0%);
 }
 
 .divider {
@@ -1500,6 +1494,16 @@ p.lead {
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.img-team {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.img-team:hover {
+    filter: grayscale(0%);
 }
 .team-info {
     text-align: center;
@@ -2773,88 +2777,101 @@ only screen and (min-device-pixel-ratio: 1.5) {
         margin-bottom: 20px;
     }
 }
+
+
 /* General Styling for CEO Sections */
 .ceo-speech {
     background: linear-gradient(135deg, #ffffff, #f0f4f8); /* Light gradient background */
-    padding: 80px 0; /* More spacious padding */
-    border-radius: 10px; /* Soft rounded edges */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    padding: 80px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .ceo-speech .title-section {
-    font-size: 2.5rem; /* Larger title size */
+    font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #50b8e6; /* Accent color */
-    font-family: 'Poppins', sans-serif; /* Modern, clean font */
-    text-transform: uppercase; /* Bold title style */
+    color: #50b8e6;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .ceo-speech .title-underline {
     width: 100px;
     height: 4px;
-    background-color: #50b8e6; /* Matching underline color */
-    margin: 10px auto; /* Centered underline */
-    border-radius: 2px; /* Rounded edges */
+    background-color: #50b8e6;
+    margin: 10px auto;
+    border-radius: 2px;
 }
 
 .ceo-speech .ceo-image {
-    width: 300px; /* Reduced size for balance */
+    width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
     margin-bottom: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
-     /* Adding a border for emphasis */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .ceo-speech .ceo-quote {
-    background: rgba(114, 115, 116, 0.05); /* Light, subtle blue background for contrast */
+    background: rgba(114, 115, 116, 0.05);
     padding: 80px;
-    height: 300px;
+    height: auto;
     font-size: 1.2rem;
     line-height: 1.8;
-    font-family: 'Merriweather', serif; /* Elegant, readable font */
-    color: #333333; /* Darker text color */
-    border-radius: 10px; /* Rounded edges for the quote */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.ceo-speech .ceo-quote-thank {
-    background: rgba(114, 115, 116, 0.05); /* Light, subtle blue background for contrast */
-    padding: 30px;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    font-family: 'Merriweather', serif; /* Elegant, readable font */
-    color: #333333; /* Darker text color */
-    border-radius: 10px; /* Rounded edges for the quote */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-
-.ceo-speech .ceo-quote p {
-    margin-bottom: 1.2rem;
+    font-family: 'Merriweather', serif;
+    color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .ceo-speech .blockquote-footer {
     font-size: 1rem;
     font-weight: bold;
-    color: #50b8e6; /* Accent color for the footer */
+    color: #50b8e6;
     margin-top: 20px;
-    font-style: italic; /* Italic for signature-like effect */
+    font-style: italic;
 }
 
 .ceo-speech .row.mb-4 {
-    margin-bottom: 50px; /* Balanced spacing */
+    margin-bottom: 50px;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design for Larger Screens */
+@media (min-width: 1200px) {
+    .ceo-speech {
+        padding: 100px 0;
+    }
+    
+    .ceo-speech .title-section {
+        font-size: 3rem;
+    }
+    
+    .ceo-speech .ceo-image {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .ceo-speech .ceo-quote {
+        font-size: 1.3rem;
+        padding: 100px;
+    }
+}
+
+/* Responsive Design for Medium and Small Screens */
+@media (max-width: 992px) {
+    .ceo-speech .ceo-quote {
+        padding: 60px;
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .ceo-speech {
         padding: 40px 0;
     }
     
     .ceo-speech .title-section {
-        font-size: 2rem; /* Smaller title size for mobile */
+        font-size: 2rem;
     }
     
     .ceo-speech .ceo-image {
@@ -2865,5 +2882,26 @@ only screen and (min-device-pixel-ratio: 1.5) {
     .ceo-speech .ceo-quote {
         font-size: 1rem;
         padding: 20px;
+    }
+}
+
+/* Responsive Design for Extra Small Screens */
+@media (max-width: 576px) {
+    .ceo-speech {
+        padding: 30px 0;
+    }
+    
+    .ceo-speech .title-section {
+        font-size: 1.8rem;
+    }
+    
+    .ceo-speech .ceo-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .ceo-speech .ceo-quote {
+        font-size: 0.9rem;
+        padding: 15px;
     }
 }
