@@ -2926,8 +2926,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .slider-text {
     display: flex;
     white-space: nowrap;
-    animation: slide 10s linear infinite; 
-  }
+    animation: slide 15s linear infinite;
+    animation-play-state: running;
+    will-change: transform;
+    }
   
   /* Text styling */
   .slider-text span {
@@ -2946,7 +2948,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%); 
+      transform: translateX(-100%); 
     }
   }
   
